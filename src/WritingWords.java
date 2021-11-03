@@ -16,7 +16,7 @@ public class WritingWords {
     }
 
     public void addRow() {
-        amountRows = amountRows + 1;
+        amountRows++;
     }
 
 
@@ -31,6 +31,7 @@ public class WritingWords {
             if (stopIsStopping[i].equals("Stop") || stopIsStopping[i].equals("stop")) {
                 System.out.println("The word Stop has been detected.");
                 continueStatement = true;
+                break;
             } else {
                 if(i<=0){
                     addRow();
